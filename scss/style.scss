@@ -12,7 +12,7 @@
 }
 
 .header {
-  padding: 22px 0;
+  padding: 22px 0 18px;
   background-image: linear-gradient(
     270deg,
     rgba(46, 49, 146, 0.7) 0%,
@@ -28,10 +28,10 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 9.5px;
-    gap: 7px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
   &__phone-link {
     color: $white;
@@ -49,11 +49,11 @@
 }
 
 .logo {
-  padding: 26px 0 15px;
   display: flex;
   align-items: center;
   gap: 9px;
   justify-content: center;
+  margin-bottom: 15px;
 
   &-text {
     width: 114px;
@@ -64,17 +64,14 @@
   }
 }
 
-.order {
-  background-image: url(../images/back-figures.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 23px;
+.intro {
   padding-bottom: 11px;
 
   &__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 26px;
   }
   &__title {
     text-align: center;
@@ -82,8 +79,8 @@
     font-style: normal;
     font-weight: 900;
     line-height: 25px;
-    width: 200px;
     margin: 0 auto 8px;
+    width: 200px;
   }
   &__subtitle {
     display: block;
@@ -104,6 +101,16 @@
     height: 28px;
     margin-bottom: 53px;
   }
+  &__inner-wrapper {
+    background-image: url(../images/back-figures.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 23px 3% 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .what-is__title {
@@ -121,7 +128,7 @@
 }
 
 .presentation {
-  padding: 20px 28px 103px;
+  padding: 34px 28px 100px;
 
   &__cards {
     display: flex;
@@ -134,7 +141,7 @@
   }
 
   &__card-info {
-    padding: 15px 25px 21px 17px;
+    padding: 13px 25px 21px 17px;
   }
 
   &__card {
@@ -187,7 +194,7 @@
 .reviewer__pic {
   position: absolute;
   top: -90px;
-  left: 50px;
+  left: 58px;
 }
 
 .review {
@@ -223,10 +230,13 @@
     font-weight: 700;
     line-height: normal;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   &__phones {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
   }
   &__phone-link {
     color: $black;
@@ -234,10 +244,14 @@
     line-height: 9.5px;
   }
   &__social {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
   &__text {
-    width: 230px;
+    width: 225px;
+    text-align: center;
+  }
+  &__span {
+    display: block;
     text-align: center;
   }
 }
@@ -276,6 +290,20 @@
       font-weight: 500;
       line-height: 14px;
       text-align: start;
+    }
+  }
+
+  .intro {
+    &__inner {
+      align-items: start;
+      padding: 62px 66px 0;
+    }
+    &__inner-wrapper {
+      align-items: start;
+    }
+    &__title {
+      text-align: start;
+      margin: 0px;
     }
   }
 
