@@ -39,11 +39,18 @@ ul {
   flex-direction: column;
   margin-bottom: 8px;
 }
-.header__your-city {
+.header__phone-link {
+  color: #fff;
+}
+.header__your-city-link {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 17px;
   line-height: 16px;
+  color: #fff;
+}
+.header__visit-social {
+  display: none;
 }
 
 .logo {
@@ -66,10 +73,12 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 23px;
+  padding-bottom: 11px;
+}
+.order__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 11px;
 }
 .order__title {
   text-align: center;
@@ -104,6 +113,7 @@ ul {
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
 }
 .what-is__title--colored {
   background-image: linear-gradient(180deg, #b90160 0%, #3d5bf5 100%);
@@ -185,4 +195,81 @@ ul {
   display: flex;
   justify-content: center;
   margin: 18px 0;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 61px 0 50px;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer__phones {
+  margin-bottom: 20px;
+}
+.footer__phone-link {
+  color: #000;
+  font-size: 14px;
+  line-height: 9.5px;
+}
+.footer__social {
+  margin-bottom: 15px;
+}
+.footer__text {
+  width: 230px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 25px 45px;
+  }
+  .header__phones {
+    display: none;
+  }
+  .header__your-city-link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    position: relative;
+  }
+  .header__your-city-link::before {
+    content: url(/images/location.svg);
+    position: absolute;
+    left: -16px;
+  }
+  .header__visit-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .header__content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    align-items: center;
+  }
+  .header__visit-text {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: start;
+  }
+  .logo-pic {
+    width: 100px;
+    height: 60px;
+  }
+  .logo-text {
+    font-size: 36px;
+  }
 }/*# sourceMappingURL=style.css.map */
