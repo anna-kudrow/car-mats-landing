@@ -294,25 +294,83 @@
   }
 
   .intro {
+    padding-bottom: 0;
     &__inner {
       align-items: start;
       padding: 62px 66px 0;
     }
     &__inner-wrapper {
       align-items: start;
+      padding: 0;
+      background-image: none;
+      position: relative;
+      &::after {
+        content: url(/images/tablet-figures.svg);
+        position: absolute;
+        left: 338px;
+        bottom: 159px;
+      }
     }
     &__title {
       text-align: start;
-      margin: 0px;
+      margin: 0 0 30px;
+      font-size: 40px;
+      line-height: 40px;
+      width: 350px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    &__button {
+      width: 141px;
+      height: 42px;
+      font-size: 15px;
+      margin-bottom: 206px;
     }
   }
 
+  .what-is__title {
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
   .logo {
+    gap: 24px;
+    margin-bottom: 61px;
+    position: relative;
+
     &-pic {
       width: 100px;
       height: 60px;
     }
     &-text {
+      font-size: 36px;
+      width: 160px;
+      display: block;
+    }
+    &::after {
+      content: url(/images/tablet-back.svg);
+      position: absolute;
+      left: 216px;
+      top: 25px;
+    }
+  }
+
+  .presentation {
+    padding: 78px 87px 124px;
+
+    &__cards {
+      gap: 61px;
+    }
+    &__img {
+      width: 100%;
+      border-radius: 9px 9px 0 0;
+    }
+    &__card-info {
+      padding: 25px 60px 25px 40px;
+    }
+    &_card-title {
       font-size: 36px;
     }
   }
