@@ -443,4 +443,26 @@ ul {
     height: 25px;
     left: -20px;
   }
+  .intro__inner {
+    padding: 47px 120px;
+  }
+  .intro__title {
+    font-size: 50px;
+    line-height: 47px;
+    width: 680px;
+  }
+  .intro__button {
+    width: 179px;
+    height: 53px;
+    font-size: 20px;
+  }
+  .intro__background-figures {
+    width: 533px;
+    height: 686px;
+    bottom: 55px;
+    right: 65px;
+  }
+  .intro .logo {
+    margin-bottom: 189px;
+  }
 }/*# sourceMappingURL=style.css.map */

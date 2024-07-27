@@ -485,4 +485,30 @@
       left: -20px;
     }
   }
+
+  .intro {
+    &__inner {
+      padding: 47px 120px;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 47px;
+      width: 680px;
+    }
+    &__button {
+      width: 179px;
+      height: 53px;
+      font-size: 20px;
+    }
+    &__background-figures {
+      width: 533px;
+      height: 686px;
+      bottom: 55px;
+      right: 65px;
+    }
+
+    .logo {
+      margin-bottom: 189px;
+    }
+  }
 }

@@ -52,7 +52,21 @@
     <main class="main">
       <section class="intro">
         <div class="intro__inner">
-          <img class="intro__background" src="/images/tablet-back.svg" alt="" />
+          <picture class="intro__background">
+            <source
+              srcset="/images/back-tablet.svg"
+              media="(max-width: 1439px)"
+            />
+            <source
+              srcset="/images/back-desktop.svg"
+              media="(max-width: 1800px)"
+            />
+            <img
+              class="intro__background"
+              src="/images/back-tablet.svg"
+              alt="background with geometric figures"
+            />
+          </picture>
           <img
             class="intro__background-figures"
             src="images/tablet-figures.svg"
