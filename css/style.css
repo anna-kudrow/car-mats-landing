@@ -71,6 +71,12 @@ ul {
 .intro {
   padding-bottom: 11px;
 }
+.intro__background {
+  display: none;
+}
+.intro__background-figures {
+  display: none;
+}
 .intro__inner {
   display: flex;
   flex-direction: column;
@@ -109,7 +115,7 @@ ul {
   background-image: url(../images/back-figures.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 23px 3% 10px;
+  padding: 23px 0 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -244,6 +250,10 @@ ul {
   display: block;
   text-align: center;
 }
+.footer__link {
+  display: flex;
+  justify-content: center;
+}
 
 @media (min-width: 768px) {
   .header {
@@ -262,6 +272,8 @@ ul {
     content: url(/images/location.svg);
     position: absolute;
     left: -16px;
+    width: 10px;
+    height: 17px;
   }
   .header__visit-social {
     display: flex;
@@ -284,21 +296,27 @@ ul {
   .intro {
     padding-bottom: 0;
   }
+  .intro__background {
+    display: initial;
+    position: absolute;
+    right: 0;
+    top: 79px;
+  }
+  .intro__background-figures {
+    display: initial;
+    position: absolute;
+    right: 22px;
+    bottom: 172px;
+  }
   .intro__inner {
     align-items: start;
     padding: 62px 66px 0;
+    position: relative;
   }
   .intro__inner-wrapper {
     align-items: start;
     padding: 0;
     background-image: none;
-    position: relative;
-  }
-  .intro__inner-wrapper::after {
-    content: url(/images/tablet-figures.svg);
-    position: absolute;
-    left: 338px;
-    bottom: 159px;
   }
   .intro__title {
     text-align: start;
@@ -324,7 +342,6 @@ ul {
   .logo {
     gap: 24px;
     margin-bottom: 61px;
-    position: relative;
   }
   .logo-pic {
     width: 100px;
@@ -334,12 +351,6 @@ ul {
     font-size: 36px;
     width: 160px;
     display: block;
-  }
-  .logo::after {
-    content: url(/images/tablet-back.svg);
-    position: absolute;
-    left: 216px;
-    top: 25px;
   }
   .presentation {
     padding: 78px 87px 124px;
@@ -398,5 +409,38 @@ ul {
   }
   .footer__span {
     text-align: left;
+  }
+}
+@media (min-width: 1439px) {
+  .header {
+    padding: 23px 120px 23px 128px;
+  }
+  .header__content {
+    justify-content: space-between;
+  }
+  .header__phones {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    gap: 12px;
+  }
+  .header__phones::before {
+    content: url(/images/phone-icon.svg);
+  }
+  .header__phone {
+    display: flex;
+    align-items: center;
+  }
+  .header__phone-link {
+    font-size: 15px;
+  }
+  .header__your-city-link {
+    font-size: 15px;
+  }
+  .header__your-city-link::before {
+    content: url(/images/location.svg);
+    width: 15px;
+    height: 25px;
+    left: -20px;
   }
 }/*# sourceMappingURL=style.css.map */
