@@ -45,6 +45,7 @@
   }
   &__visit-social {
     display: none;
+    color: $white;
   }
 }
 
@@ -73,7 +74,6 @@
   &__background-figures {
     display: none;
   }
-
   &__inner {
     display: flex;
     flex-direction: column;
@@ -118,6 +118,10 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+.nav__ancors {
+  display: none;
 }
 
 .what-is__title {
@@ -487,9 +491,15 @@
   }
 
   .intro {
-    &__inner {
-      padding: 47px 120px;
+    &__header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
+    &__inner {
+      padding: 47px 120px 120px;
+    }
+
     &__title {
       font-size: 50px;
       line-height: 47px;
@@ -503,12 +513,52 @@
     &__background-figures {
       width: 533px;
       height: 686px;
-      bottom: 55px;
+      bottom: 191px;
       right: 65px;
     }
+    &__button {
+      margin-bottom: 250px;
+    }
+  }
 
-    .logo {
-      margin-bottom: 189px;
+  .logo {
+    margin-bottom: 189px;
+  }
+
+  .nav__ancors {
+    display: initial;
+  }
+
+  .ancors {
+    &__list {
+      display: flex;
+      gap: 25px;
+    }
+    &__link {
+      font-size: 18px;
+      line-height: normal;
+      color: $dark-grey;
+    }
+  }
+
+  .what-is__title {
+    font-size: 50px;
+  }
+
+  .presentation {
+    padding-top: 0;
+    padding-bottom: 225px;
+
+    &__cards {
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__card {
+      width: 344px;
+      height: 414px;
+    }
+    &__card-info {
+      padding: 25px 30px 35px 20px;
     }
   }
 }

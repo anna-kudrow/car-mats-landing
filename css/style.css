@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -51,6 +55,7 @@ ul {
 }
 .header__visit-social {
   display: none;
+  color: #fff;
 }
 
 .logo {
@@ -120,6 +125,10 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.nav__ancors {
+  display: none;
 }
 
 .what-is__title {
@@ -443,8 +452,13 @@ ul {
     height: 25px;
     left: -20px;
   }
+  .intro__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
   .intro__inner {
-    padding: 47px 120px;
+    padding: 47px 120px 120px;
   }
   .intro__title {
     font-size: 50px;
@@ -459,10 +473,43 @@ ul {
   .intro__background-figures {
     width: 533px;
     height: 686px;
-    bottom: 55px;
+    bottom: 191px;
     right: 65px;
   }
-  .intro .logo {
+  .intro__button {
+    margin-bottom: 250px;
+  }
+  .logo {
     margin-bottom: 189px;
+  }
+  .nav__ancors {
+    display: initial;
+  }
+  .ancors__list {
+    display: flex;
+    gap: 25px;
+  }
+  .ancors__link {
+    font-size: 18px;
+    line-height: normal;
+    color: #767676;
+  }
+  .what-is__title {
+    font-size: 50px;
+  }
+  .presentation {
+    padding-top: 0;
+    padding-bottom: 225px;
+  }
+  .presentation__cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .presentation__card {
+    width: 344px;
+    height: 414px;
+  }
+  .presentation__card-info {
+    padding: 25px 30px 35px 20px;
   }
 }/*# sourceMappingURL=style.css.map */
