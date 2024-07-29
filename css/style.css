@@ -309,13 +309,15 @@ ul {
     display: initial;
     position: absolute;
     right: 0;
-    top: 79px;
+    top: 45px;
   }
   .intro__background-figures {
     display: initial;
     position: absolute;
     right: 22px;
-    bottom: 172px;
+    bottom: 154px;
+    width: 368px;
+    height: 473px;
   }
   .intro__inner {
     align-items: start;
@@ -470,11 +472,15 @@ ul {
     height: 53px;
     font-size: 20px;
   }
+  .intro__background {
+    right: 43px;
+    top: 68px;
+  }
   .intro__background-figures {
     width: 533px;
     height: 686px;
-    bottom: 191px;
-    right: 65px;
+    bottom: 210px;
+    right: 157px;
   }
   .intro__button {
     margin-bottom: 250px;
@@ -519,5 +525,11 @@ ul {
   }
   .reviews__list {
     flex-direction: row;
+  }
+  .footer {
+    padding: 172px 243px 94px;
+  }
+  .footer__link {
+    justify-content: start;
   }
 }/*# sourceMappingURL=style.css.map */

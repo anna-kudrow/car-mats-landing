@@ -319,13 +319,15 @@
       display: initial;
       position: absolute;
       right: 0;
-      top: 79px;
+      top: 45px;
     }
     &__background-figures {
       display: initial;
       position: absolute;
       right: 22px;
-      bottom: 172px;
+      bottom: 154px;
+      width: 368px;
+      height: 473px;
     }
     &__inner {
       align-items: start;
@@ -510,11 +512,15 @@
       height: 53px;
       font-size: 20px;
     }
+    &__background {
+      right: 43px;
+      top: 68px;
+    }
     &__background-figures {
       width: 533px;
       height: 686px;
-      bottom: 191px;
-      right: 65px;
+      bottom: 210px;
+      right: 157px;
     }
     &__button {
       margin-bottom: 250px;
@@ -569,6 +575,14 @@
 
     &__list {
       flex-direction: row;
+    }
+  }
+
+  .footer {
+    padding: 172px 243px 94px;
+
+    &__link {
+      justify-content: start;
     }
   }
 }
