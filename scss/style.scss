@@ -472,7 +472,7 @@
       gap: 12px;
     }
     &__phones::before {
-      content: url(images/phone-icon.svg);
+      content: url("./images/phone-icon.svg");
     }
     &__phone {
       display: flex;
@@ -485,7 +485,7 @@
       font-size: 15px;
     }
     &__your-city-link::before {
-      content: url(images/location.svg);
+      content: url("./images/location.svg");
       width: 15px;
       height: 25px;
       left: -20px;
