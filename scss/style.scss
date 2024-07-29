@@ -62,6 +62,7 @@
     font-style: italic;
     font-size: 18px;
     line-height: normal;
+    color: $black;
   }
 }
 
@@ -107,6 +108,7 @@
     width: 93px;
     height: 28px;
     margin-bottom: 53px;
+    cursor: pointer;
   }
   &__inner-wrapper {
     background-image: url(../images/back-figures.jpg);
