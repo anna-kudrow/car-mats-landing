@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
+
     <title>Evarugs - автомобильные коврики</title>
   </head>
   <body class="body">
@@ -329,44 +331,46 @@
                 />
               </defs>
             </svg>
-            <p class="review__text">
-              Коврики супер!!! Качество на высшем уровне!!! Удачи и побольше
-              заказов вам!!! Большое спасибо!
-            </p>
-            <div class="review__decor-line">
-              <svg
-                width="130"
-                height="2"
-                viewBox="0 0 130 2"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line
-                  x1="1"
-                  y1="1"
-                  x2="129"
-                  y2="1"
-                  stroke="url(#paint0_linear_132_482)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_132_482"
-                    x1="9.99997"
-                    y1="-15.4999"
-                    x2="114"
-                    y2="18"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#D4145A" />
-                    <stop offset="1" stop-color="#3D5BF5" />
-                  </linearGradient>
-                </defs>
-              </svg>
+            <div class="review__info">
+              <p class="review__text">
+                Коврики супер!!! Качество на высшем уровне!!! Удачи и побольше
+                заказов вам!!! Большое спасибо!
+              </p>
+              <div class="review__decor-line">
+                <svg
+                  width="130"
+                  height="2"
+                  viewBox="0 0 130 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="1"
+                    y1="1"
+                    x2="129"
+                    y2="1"
+                    stroke="url(#paint0_linear_132_482)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_132_482"
+                      x1="9.99997"
+                      y1="-15.4999"
+                      x2="114"
+                      y2="18"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#D4145A" />
+                      <stop offset="1" stop-color="#3D5BF5" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <span class="review__reviewer-name">Константин В.</span>
             </div>
-            <span class="review__reviewer-name">Константин В.</span>
           </li>
           <li class="reviews__item">
             <svg
@@ -657,7 +661,6 @@
                 </defs>
               </svg>
             </div>
-
             <span class="review__reviewer-name">Николай П.</span>
           </li>
         </ul>
@@ -725,5 +728,7 @@
         </div>
       </div>
     </footer>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

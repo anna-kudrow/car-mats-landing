@@ -561,4 +561,14 @@
       padding: 25px 30px 35px 20px;
     }
   }
+
+  .reviews {
+    overflow-x: scroll;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__list {
+      flex-direction: row;
+    }
+  }
 }
