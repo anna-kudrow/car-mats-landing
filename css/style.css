@@ -270,7 +270,7 @@ ul {
 .modal {
   position: relative;
   margin: auto;
-  padding: 42px 215px 48px;
+  padding: 29px 27px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 0px 35px 0px rgba(212, 20, 90, 0.25);
@@ -290,17 +290,17 @@ ul {
   display: none;
 }
 .modal__content {
-  width: 750px;
+  width: 212px;
 }
 .modal__title {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 500;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .modal__close-button {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border: transparent;
   background-color: transparent;
   position: absolute;
@@ -311,8 +311,8 @@ ul {
 .modal__close-button::after, .modal__close-button::before {
   content: "";
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 20px;
+  height: 2px;
   background-color: #8e8e8e;
   border-radius: 3px;
   background-color: #989898;
@@ -329,10 +329,10 @@ ul {
 .modal__button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  border-radius: 9px;
-  font-size: 20px;
-  width: 169px;
-  height: 42px;
+  border-radius: 4px;
+  font-size: 9px;
+  width: 58px;
+  height: 18px;
   margin: 0;
 }
 
@@ -343,11 +343,12 @@ ul {
 
 .application-form__upper-fields {
   display: flex;
-  gap: 25px;
-  margin-bottom: 17px;
+  gap: 19px;
+  margin-bottom: 19px;
+  flex-direction: column;
 }
 .application-form__field {
-  padding: 13px 20px 24px;
+  padding: 3px 25px;
   border-radius: 9px;
   border: 1px solid #a1a1a1;
   background: #fff;
@@ -359,36 +360,39 @@ ul {
 }
 
 .field-group__message {
-  height: 82px;
-  margin-bottom: 48px;
+  height: 95px;
+  margin-bottom: 22px;
 }
 
 .field-group__message .application-form__field {
   height: 100%;
+  padding: 8px 16px 30px;
 }
 
 .field-group__message .application-form__field::-moz-placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   color: #989898;
 }
 
 .field-group__message .application-form__field::placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   color: #989898;
 }
 
 .application-form__field::-moz-placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   color: #989898;
+  text-align: center;
 }
 
 .application-form__field::placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   color: #989898;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -662,5 +666,42 @@ ul {
   }
   .footer__link {
     justify-content: start;
+  }
+  .modal {
+    padding: 42px 215px 48px;
+  }
+  .modal__content {
+    width: 750px;
+  }
+  .modal__close-button {
+    height: 25px;
+    width: 25px;
+  }
+  .modal__close-button::after, .modal__close-button::before {
+    width: 25px;
+  }
+  .modal__button {
+    border-radius: 9px;
+    font-size: 20px;
+    width: 169px;
+    height: 42px;
+  }
+  .application-form__upper-fields {
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 17px;
+  }
+  .application-form__field {
+    padding: 13px 20px 24px;
+  }
+  .field-group__message {
+    height: 82px;
+    margin-bottom: 48px;
+  }
+  .field-group__message .application-form__field::-moz-placeholder {
+    font-size: 14px;
+  }
+  .field-group__message .application-form__field::placeholder {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

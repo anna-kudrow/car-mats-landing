@@ -279,7 +279,7 @@
 .modal {
   position: relative;
   margin: auto;
-  padding: 42px 215px 48px;
+  padding: 29px 27px;
   background-color: $white;
   border-radius: 15px;
   box-shadow: 0px 0px 35px 0px rgba(212, 20, 90, 0.25);
@@ -298,17 +298,17 @@
     display: none;
   }
   &__content {
-    width: 750px;
+    width: 212px;
   }
   &__title {
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     text-align: center;
   }
   &__close-button {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border: transparent;
     background-color: transparent;
     position: absolute;
@@ -320,8 +320,8 @@
   &__close-button::before {
     content: "";
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background-color: $light-grey;
     border-radius: 3px;
     background-color: $placeholder;
@@ -338,10 +338,10 @@
   &__button {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    border-radius: 9px;
-    font-size: 20px;
-    width: 169px;
-    height: 42px;
+    border-radius: 4px;
+    font-size: 9px;
+    width: 58px;
+    height: 18px;
     margin: 0;
   }
 }
@@ -361,11 +361,12 @@
 .application-form {
   &__upper-fields {
     display: flex;
-    gap: 25px;
-    margin-bottom: 17px;
+    gap: 19px;
+    margin-bottom: 19px;
+    flex-direction: column;
   }
   &__field {
-    padding: 13px 20px 24px;
+    padding: 3px 25px;
     border-radius: 9px;
     border: 1px solid #a1a1a1;
     background: #fff;
@@ -378,24 +379,26 @@
 }
 
 .field-group__message {
-  height: 82px;
-  margin-bottom: 48px;
+  height: 95px;
+  margin-bottom: 22px;
 }
 
 .field-group__message .application-form__field {
   height: 100%;
+  padding: 8px 16px 30px;
 }
 
 .field-group__message .application-form__field::placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   color: $placeholder;
 }
 
 .application-form__field::placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   color: $placeholder;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -712,5 +715,47 @@
     &__link {
       justify-content: start;
     }
+  }
+
+  .modal {
+    padding: 42px 215px 48px;
+
+    &__content {
+      width: 750px;
+    }
+    &__close-button {
+      height: 25px;
+      width: 25px;
+    }
+    &__close-button::after,
+    &__close-button::before {
+      width: 25px;
+    }
+    &__button {
+      border-radius: 9px;
+      font-size: 20px;
+      width: 169px;
+      height: 42px;
+    }
+  }
+
+  .application-form {
+    &__upper-fields {
+      flex-direction: row;
+      gap: 25px;
+      margin-bottom: 17px;
+    }
+    &__field {
+      padding: 13px 20px 24px;
+    }
+  }
+
+  .field-group__message {
+    height: 82px;
+    margin-bottom: 48px;
+  }
+
+  .field-group__message .application-form__field::placeholder {
+    font-size: 14px;
   }
 }
