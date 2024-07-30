@@ -74,6 +74,21 @@ ul {
   color: #000;
 }
 
+.button {
+  color: #fff;
+  border-radius: 7px;
+  background-image: linear-gradient(95deg, #b90160 2.23%, #2e3192 99.51%);
+  border: transparent;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  width: 93px;
+  height: 28px;
+  margin-bottom: 53px;
+  cursor: pointer;
+}
+
 .intro {
   padding-bottom: 11px;
 }
@@ -103,20 +118,6 @@ ul {
   text-align: center;
   font-size: 20px;
   margin-bottom: 9px;
-}
-.intro__button {
-  color: #fff;
-  border-radius: 7px;
-  background-image: linear-gradient(95deg, #b90160 2.23%, #2e3192 99.51%);
-  border: transparent;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  width: 93px;
-  height: 28px;
-  margin-bottom: 53px;
-  cursor: pointer;
 }
 .intro__inner-wrapper {
   background-image: url(../images/back-figures.jpg);
@@ -264,6 +265,134 @@ ul {
 .footer__link {
   display: flex;
   justify-content: center;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 42px 215px 48px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 35px 0px rgba(212, 20, 90, 0.25);
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+}
+.modal-container-close {
+  display: none;
+}
+.modal__content {
+  width: 750px;
+}
+.modal__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.modal__close-button {
+  height: 25px;
+  width: 25px;
+  border: transparent;
+  background-color: transparent;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.modal__close-button::after, .modal__close-button::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #8e8e8e;
+  border-radius: 3px;
+  background-color: #989898;
+  position: absolute;
+  right: 0px;
+  top: 11px;
+}
+.modal__close-button::after {
+  transform: rotate(45deg);
+}
+.modal__close-button::before {
+  transform: rotate(-45deg);
+}
+.modal__button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 9px;
+  font-size: 20px;
+  width: 169px;
+  height: 42px;
+  margin: 0;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.application-form__upper-fields {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 17px;
+}
+.application-form__field {
+  padding: 13px 20px 24px;
+  border-radius: 9px;
+  border: 1px solid #a1a1a1;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+.application-form__field-group {
+  width: 100%;
+}
+
+.field-group__message {
+  height: 82px;
+  margin-bottom: 48px;
+}
+
+.field-group__message .application-form__field {
+  height: 100%;
+}
+
+.field-group__message .application-form__field::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #989898;
+}
+
+.field-group__message .application-form__field::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #989898;
+}
+
+.application-form__field::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #989898;
+}
+
+.application-form__field::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #989898;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 @media (min-width: 768px) {
