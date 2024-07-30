@@ -129,6 +129,12 @@ ul {
   flex-direction: column;
   align-items: center;
 }
+.intro__button {
+  transition: transform 1s;
+}
+.intro__button:hover {
+  transform: scale(1.2);
+}
 
 .nav__ancors {
   display: none;
@@ -164,6 +170,10 @@ ul {
 .presentation__card {
   border-radius: 9px;
   box-shadow: 0px 0px 40px 0px rgba(184, 0, 95, 0.2);
+  transition: transform 1s;
+}
+.presentation__card:hover {
+  transform: scale(1.1);
 }
 .presentation__card-title {
   font-size: 30px;
@@ -265,6 +275,9 @@ ul {
 .footer__link {
   display: flex;
   justify-content: center;
+}
+.footer__socialmedia-box {
+  margin-bottom: 18px;
 }
 
 .modal {
@@ -556,6 +569,50 @@ ul {
   .footer__span {
     text-align: left;
   }
+  .modal {
+    padding: 43px 101px 37px;
+  }
+  .modal__content {
+    width: 432px;
+  }
+  .modal__title {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+  .modal__button {
+    border-radius: 9px;
+    font-size: 20px;
+    width: 137px;
+    height: 34px;
+  }
+  .application-form__upper-fields {
+    gap: 21px;
+    margin-bottom: 22px;
+  }
+  .application-form__field {
+    padding: 13px 70px 17px 20px;
+  }
+  .application-form__field::-moz-placeholder {
+    text-align: start;
+    font-size: 14px;
+  }
+  .application-form__field::placeholder {
+    text-align: start;
+    font-size: 14px;
+  }
+  .field-group__message .application-form__field {
+    padding: 8px 12px 20px;
+  }
+  .field-group__message .application-form__field::-moz-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #989898;
+  }
+  .field-group__message .application-form__field::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #989898;
+  }
 }
 @media (min-width: 1439px) {
   .header {
@@ -629,6 +686,12 @@ ul {
   .ancors__list {
     display: flex;
     gap: 25px;
+  }
+  .ancors__item {
+    transition: transform 1s;
+  }
+  .ancors__item:hover {
+    transform: scale(1.3);
   }
   .ancors__link {
     font-size: 18px;

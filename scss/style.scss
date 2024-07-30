@@ -121,6 +121,12 @@
     flex-direction: column;
     align-items: center;
   }
+  &__button {
+    transition: transform 1s;
+  }
+  &__button:hover {
+    transform: scale(1.2);
+  }
 }
 
 .nav__ancors {
@@ -161,6 +167,10 @@
   &__card {
     border-radius: 9px;
     box-shadow: 0px 0px 40px 0px rgba(184, 0, 95, 0.2);
+    transition: transform 1s;
+  }
+  &__card:hover {
+    transform: scale(1.1);
   }
 
   &__card-title {
@@ -274,6 +284,9 @@
     display: flex;
     justify-content: center;
   }
+  &__socialmedia-box {
+    margin-bottom: 18px;
+  }
 }
 
 .modal {
@@ -350,13 +363,6 @@
   display: flex;
   justify-content: center;
 }
-
-// .modal__close-button:hover + .modal__close-button::after {
-//   background-color: black;
-// }
-// .modal__close-button:hover .modal__close-button::before {
-//   background-color: black;
-// }
 
 .application-form {
   &__upper-fields {
@@ -587,6 +593,49 @@
       text-align: left;
     }
   }
+
+  .modal {
+    padding: 43px 101px 37px;
+
+    &__content {
+      width: 432px;
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+    &__button {
+      border-radius: 9px;
+      font-size: 20px;
+      width: 137px;
+      height: 34px;
+    }
+  }
+
+  .application-form {
+    &__upper-fields {
+      gap: 21px;
+      margin-bottom: 22px;
+    }
+    &__field {
+      padding: 13px 70px 17px 20px;
+    }
+  }
+
+  .application-form__field::placeholder {
+    text-align: start;
+    font-size: 14px;
+  }
+
+  .field-group__message .application-form__field {
+    padding: 8px 12px 20px;
+  }
+
+  .field-group__message .application-form__field::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: $placeholder;
+  }
 }
 
 @media (min-width: 1439px) {
@@ -670,6 +719,12 @@
     &__list {
       display: flex;
       gap: 25px;
+    }
+    &__item {
+      transition: transform 1s;
+    }
+    &__item:hover {
+      transform: scale(1.3);
     }
     &__link {
       font-size: 18px;
